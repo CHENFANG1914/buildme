@@ -6,4 +6,4 @@ RUN go mod download
 COPY . .
 RUN go build -o /bin/client ./cmd/client
 RUN go build -o /bin/server ./cmd/server
-ENTRYPOINT [ "/bin/server" ]
+ENTRYPOINT ["/bin/server"]
